@@ -1,0 +1,616 @@
+*{
+    margin : 0;
+    padding : 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.masthead{
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8)100% ), url(../assets/coffee2.jpg);
+    background-repeat: no-repeat;
+    background-size : cover;
+    height : 100vh;
+    background-position : center;
+    background-attachment: scroll;
+}
+
+nav{
+    position : fixed;
+}
+
+bg-dark{
+    height: 100%;
+    width: 100%;
+} 
+
+.nav-bg{
+    background-color: #212529;
+}
+
+.divider{
+    height: 0.5rem;
+    max-width: 20rem;
+    margin: 2rem auto;
+    opacity: 1;
+  }
+
+.btn-login{
+    float: left;
+    margin-left:10px;
+}
+.btn-logout{
+    right: 20px;
+    color: red;
+}
+.btn-danger{
+    padding: 5px 10px;
+    background: rgb(136,0,0);
+    background: linear-gradient(90deg, rgba(136,0,0,1) 35%, rgba(255,3,3,1) 100%);    border-radius: 10px;
+    color: white;
+}
+
+.img1{
+    width: 250px;
+    height: 250px;
+}
+.page-section{
+    padding: 15rem;
+}
+.animation{
+    width: 400px;
+    height: 400px;
+}
+.tagline{
+    font-family: 'Poppins', sans-serif;
+}
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+.nav-link{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.nav-link:hover::after {
+    content : '';
+    border-bottom : 4px solid rgb(255, 196, 0);
+    width : 60%;
+    margin : auto;
+    padding-bottom: 5px;
+    margin-bottom : 8px;
+}
+.navbar-nav{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.button-profile {
+    text-decoration: none;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,rgba(33,37,41,1),#7c8500,#ffeb3b,rgba(255,193,7,1));
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+   }
+   
+   .button-profile:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+   }
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+   .button-profile:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    background: linear-gradient(90deg,rgba(33,37,41,1),#7c8500,#ffeb3b,rgba(255,193,7,1));
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+   }
+   
+   .button-profile:hover::before {
+    filter: blur(20px);
+   }
+   
+   .button-profile:active {
+    background: linear-gradient(32deg,rgba(33,37,41,1),#7c8500,#ffeb3b,rgba(255,193,7,1));
+   } 
+   .custom-shape-divider-top-1669302693 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+.custom-shape-divider-bottom-1669303039 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1669303039 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 42px;
+}
+
+.custom-shape-divider-bottom-1669303039 .shape-fill {
+    fill: #ffc107;
+}
+
+.row{
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.container-list{
+    padding-left: 2em;
+    position : relative;
+    background-color: #ffc107;
+    padding-right: 1em;
+}
+
+.container-list .edit-category a{
+    color: #000;
+    text-decoration: none;
+}
+.category{
+    font-size: 1.1em;
+    position: sticky;
+    left : 0;
+    top : 6em;
+}
+
+.container-footer{
+    width: 100%;
+    height: 20%;
+}
+
+.container-category{
+    padding-left: 1em;
+    position : relative;
+    background-color: #ffc107;
+}
+
+.row .container-category .category ul li{
+    margin-bottom : .5em;
+}
+
+.row .container-category .category ul li a{
+    text-decoration: none;
+    color : black;
+    display : inline-block;
+    position: relative;}
+
+.row .container-category .category ul li a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    height: 2px;
+    margin: -3px 0;
+    left: 0;
+    background-color: black;
+    transition: all 0.4s ease-in 0s;
+}
+.row .container-category .category ul li a:hover:after {
+    width: 100%;
+}
+
+#section1, #slide1, #slide2, #slide3, #slide4, #slide5, #slide6{
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section2{
+    background-color: #ffc107;
+}
+
+#list-coffee ul, #list-tea ul, #list-food ul{
+    list-style-type: none;
+}
+
+.product{
+    display: flex;
+    flex-direction: row; 
+}
+
+.container-image{
+    height: auto;
+    width: 350px;
+}
+.product .container-image{
+    display: flex;  
+    overflow: hidden;
+}
+
+.product .container-image img {
+    width: 300px;
+    transition: transform .5 ease;
+}
+
+.product .description {
+    margin-left: 20px;
+}
+
+.img-hover-zoom--blur img {
+    transition: transform 1s, filter 2s ease-in-out;
+    transform: scale(1.2);
+  }
+  
+.img-hover-zoom--blur:hover img {
+    transform: scale(1);
+}
+.img-hover img {
+    transition: transform .5s, filter .5s ease-in-out;
+    filter: grayscale(100%);}
+
+.img-hover:hover img {
+    filter: grayscale(0);
+    transform: scale(0.9);}
+
+
+.login-bg{
+    background-image: url(../assets/login.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    padding:40px;
+    transform: translate(-50%, -50%); 
+    background-color: #2a3036;
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.register-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 680px;
+    padding:40px;
+    transform: translate(-50%, -50%); 
+    background-color: #2a3036;
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login-box h2, .register-box h2, .reservasi-box h2{
+    margin: 0 0 10px 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+}
+
+.login-box h6{
+    margin-bottom: 50px;
+    text-decoration: underline red;
+}
+
+.login-box .user-box input, .register-box .user-box input,
+.reservasi-box .user-box input{
+    position: relative;
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 1px;
+    margin-right: 5px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background-color: transparent;
+}
+
+.login-box .user-box label, .register-box .user-box label
+{
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 8px 0;
+    font-size: 16px;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.reservasi-box .user-box label{
+    position: relative;
+    left: 0;
+    top: -60px;
+    padding: 8px 0;
+    color: white;
+    pointer-events: none;
+    left: 0;
+    color: aqua;
+    font-size: 12px; 
+}
+
+.login-box .user-box input:focus~label,
+.login-box .user-box input:valid~label, 
+.register-box .user-box input:focus~label,
+.register-box .user-box input:valid~label,
+.reservasi-box .user-box input:focus~label,
+.reservasi-box .user-box input:valid~label{
+    top: -65px;
+    left: 0;
+    color: aqua;
+    font-size: 12px; 
+}
+
+#submit {
+    padding:10px 20px;
+    color: black;
+    font-size: 16px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: .5s;
+    letter-spacing: 4px;
+    border: 1px solid white;
+    border-radius: 4px;
+    margin: auto;
+}
+
+#submit:hover {
+    background-color: #2a3036;
+    color: white;
+    border-radius: 5px;
+}
+
+.btn-form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.register{
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    margin:auto;
+    width: 60%;
+    text-align: center;
+}
+
+.register a{
+    margin: auto;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Feature section*/
+
+.container-fitur {
+    font-family: "Poppins", sans-serif;
+    color: #8d97ad;
+    font-weight: 300;
+}
+
+.container-fitur h1, .container-fitur h2, .container-fitur h3, .container-fitur h4, .container-fitur h5, .container-fitur h6 {
+color: #3e4555;
+}
+
+.container-fitur .font-weight-medium {
+    font-weight: 500;
+}
+
+.container-fitur .bg-light {
+    background-color: #f4f8fa !important;
+}
+
+.container-fitur .subtitle {
+    color: #8d97ad;
+    line-height: 24px;
+}
+
+.container-fitur .card.card-shadow {
+    box-shadow: 10px 12px 5px 0px rgba(2,0,36,0.25);
+    -webkit-box-shadow: 10px 12px 5px 0px rgba(2,0,36,0.25);
+    -moz-box-shadow: 10px 12px 5px 0px rgba(2,0,36,0.25);
+}
+
+.container-fitur .wrap-fitur-box {
+margin-top: 60px;
+}
+
+.container-fitur .wrap-fitur-box .icon-space {
+margin: -70px 0 20px;
+overflow: hidden;
+}
+
+.container-fitur .wrap-fitur-box .icon-space .icon-round {
+font-size: 45px;
+color: #ffffff;
+}
+
+.container-fitur .icon-round {
+    width: 80px;
+    line-height: 80px;
+    border: 2px solid black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-fitur .icon{
+    width: 65%;
+    height: auto;
+}
+.container-fitur .btn-md {
+    padding: 15px 45px;
+    font-size: 16px;
+}
+/* end of feature section */
+
+/* Perkenalan Produk */
+.container-gambar {
+    background-image:url(../assets/coffee4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
+} 
+.container-gambar:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0) 60%,
+      rgba(0, 0, 0, 0.8) 100%
+    );
+  }
+
+.container-gambar .container{
+    position: relative;
+    background-color: rgb(33,37,41);
+    background-color: rgb(33,37,41, 0.3); 
+    width: 100%;
+    height: 100%;
+    border-radius:10px;
+    font-weight: 400;
+}
+
+.container-gambar .container .button-profile,
+.container-gambar .container .button-profile:before,
+.container-gambar .container .button-profile:hover::before,
+.container-gambar .container .button-profile:active{
+    background: linear-gradient(90deg, rgba(33,37,41,1) 35%, rgba(255,193,7,1) 100%)
+}
+
+.btn-dark:hover{
+    color:white;
+}
+
+
+/* end */
+
+/* gallery */
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 25px;
+}
+
+.pic{
+    position: relative;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* end */
+
+form .input {
+    padding: 10px;
+}
+
+.bg-reservasi {
+    padding-bottom: calc(10rem - 4.5rem);
+    background: url(../assets/coffee5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+}
+
+.reservasi-box{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    width: 400px;
+    padding:40px;
+    transform: translate(-50%, -50%); 
+    background-color: #2a3036;
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.order-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    padding:10px;
+    transform: translate(-50%, -50%); 
+    background-color: #2a3036;
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.daftar-reservasi{
+    position: absolute;
+    top: 55%;
+    left: 70%;
+    width: 50%;
+    padding:20px;
+    margin-right: 30px;
+    transform: translate(-50%, -50%); 
+    background-color: #2a3036;
+    color : white;
+    box-shadow: 0 15px 25px black;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.user-box select{
+    margin-top:10px;
+    border-radius: 10px;
+    font-size: 14px;
+    
+}
