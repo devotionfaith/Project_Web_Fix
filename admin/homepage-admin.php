@@ -39,6 +39,8 @@ if ($_SESSION['role'] != 'admin' || empty($_SESSION['username'])) {
                         </button></a>
                     <a class="btn" href="../home.php"> <button class="button-profile">User Page
                         </button></a>
+                    <a class="btn" href="lihatreservasi.php"> <button class="button-profile">Lihat Reservasi
+                        </button></a>
                 </div>
                 <div class="col-6 col-xl-4 col-xxl-5 text-center">
                     <div class="lottie-product">
