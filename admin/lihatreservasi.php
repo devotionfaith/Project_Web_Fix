@@ -28,10 +28,7 @@ include '../sessions.php';
             <div class="collapse navbar-collapse justify-content-md-center" id="navbarsMiddle">
                 <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a href="home.php" class="nav-link" aria-current="page">HOME</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="products.php" class="nav-link" aria-current="page">PRODUCTS</a>
+                        <a href="homepage-admin.php" class="nav-link" aria-current="page">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a href="lihat-order.php" class="nav-link" aria-current="page">LIHAT ORDER</a>
